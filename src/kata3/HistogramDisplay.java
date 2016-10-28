@@ -9,12 +9,8 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.ui.ApplicationFrame;
 
 public class HistogramDisplay extends ApplicationFrame{
-    
-    private final Histogram<String> histogram;
-    
-    public HistogramDisplay(Histogram<String> histogram) {
+    public HistogramDisplay() {
         super("PRUEBA");
-        this.histogram = histogram;
         setContentPane(createPanel());
         pack();
     }
